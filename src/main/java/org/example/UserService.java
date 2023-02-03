@@ -6,11 +6,9 @@ import java.util.stream.Collectors;
 
 public class UserService {
     private final UserRepository userRepository;
-
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
     public List<String> getAllLogins() {
         try {
             Collection<User> users = this.userRepository.getAllUsers();

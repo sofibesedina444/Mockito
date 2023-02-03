@@ -19,7 +19,6 @@ class UserServiceTest {
     UserRepository userRepository;
     @InjectMocks
     UserService userService;
-
     @Test
     void whenRepositoryReturnsNullThenSomethingHappenedThenListOfLoginsMustBeEmpty() {
         when(userRepository.getAllUsers()).thenReturn(null);

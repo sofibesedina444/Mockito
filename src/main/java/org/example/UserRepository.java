@@ -4,7 +4,6 @@ import java.util.*;
 
 public class UserRepository {
     private final List<User> users = new ArrayList<>();
-
     public Collection<User> getAllUsers() {
         return Collections.unmodifiableList(users);
     }
