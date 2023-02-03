@@ -11,7 +11,6 @@ class UserRepositoryTest {
     private final User user1 = new User("john@domain.com", "John176-3");
     private final User user2 = new User("susan@domain.com", "Susan-6513");
     UserRepository userRepository;
-
     @BeforeEach
     public void setUp() {
         userRepository = new UserRepository();
